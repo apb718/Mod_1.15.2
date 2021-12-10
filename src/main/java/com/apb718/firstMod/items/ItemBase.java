@@ -1,12 +1,13 @@
 package com.apb718.firstMod.items;
 
+import com.apb718.firstMod.Tutorial;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+
 
 public class ItemBase extends Item {
 
     public ItemBase() {
-        super(new Item.Properties().group(ItemGroup.MATERIALS));
+        super(new Item.Properties().group(Tutorial.TAB));
     }
 
 }

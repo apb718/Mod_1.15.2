@@ -1,6 +1,8 @@
 package com.apb718.firstMod;
 
 import com.apb718.firstMod.util.RegistryHandler;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -31,4 +33,14 @@ public class Tutorial
     private void setup(final FMLCommonSetupEvent event) { }
 
     private void doClientStuff(final FMLCommonSetupEvent event) { }
+
+    public static final ItemGroup TAB  = new ItemGroup("tutorialTab") {
+
+        @Override
+        public ItemStack createIcon(){
+            return new ItemStack(RegistryHandler.QUARTER.get());
+            //for vanilla item ItemStack(Items.APPLE);
+            // or block ItemStack(Blocks.GRASS
+        }
+    };
 }

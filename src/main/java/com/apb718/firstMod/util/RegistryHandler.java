@@ -2,6 +2,7 @@ package com.apb718.firstMod.util;
 
 import com.apb718.firstMod.Tutorial;
 import com.apb718.firstMod.blocks.BlockItemBase;
+import com.apb718.firstMod.blocks.QuarterBlock;
 import com.apb718.firstMod.blocks.RubyBlock;
 import com.apb718.firstMod.blocks.RubyOreBlock;
 import com.apb718.firstMod.items.ItemBase;
@@ -31,8 +32,9 @@ public class RegistryHandler {
     //Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
     public static final RegistryObject<Block> RUBY_ORE_BLOCK = BLOCKS.register("ruby_ore_block", RubyOreBlock::new);
-
+    public static final RegistryObject<Block> QUARTER_BLOCK = BLOCKS.register("quarter_block", QuarterBlock::new);
     //Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
     public static final RegistryObject<Item> RUBY_ORE_BLOCK_ITEM = ITEMS.register("ruby_ore_block", () -> new BlockItemBase(RUBY_ORE_BLOCK.get()));
+    public static final RegistryObject<Item> QUARTER_BLOCK_ITEM = ITEMS.register("quarter_block", () -> new BlockItemBase(QUARTER_BLOCK.get()));
 }

@@ -3,5 +3,6 @@
   "item.tutorial.quarter": "Quarter",
   "itemGroup.tutorialTab": "Tutorial",
   "block.tutorial.ruby_block": "Block of Ruby",
-  "block.tutorial.ruby_ore_block": "Ruby Ore"
+  "block.tutorial.ruby_ore_block": "Ruby Ore",
+  "block.tutorial.quarter_block": "Block of Quarters"
 }
